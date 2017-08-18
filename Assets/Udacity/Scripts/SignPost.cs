@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class SignPost : MonoBehaviour
 {	
-	public void ResetScene() 
-	{
-        // Reset the scene when the user clicks the sign post
+	public void ResetScene(string stringName){
+		Debug.Log ("You have clicked to restart the game");
+		SceneManager.LoadScene (stringName);
 	}
 }
