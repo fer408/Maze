@@ -22,7 +22,7 @@ public class Key : MonoBehaviour
 		Debug.Log ("You have the key!");
 		GameObject keyPoofPrefabClone = (GameObject)Instantiate(keyPoofPrefab, transform.position, transform.rotation);
 		keyPoofPrefab.GetComponent<AudioSource>().clip = keyClip;
-		//gameObject.GetComponentInChildren<AudioSource>().Play();
+
 		// Call the Unlock() method on the Door
 		door.Unlock();
 		// Set the Key Collected Variable to true

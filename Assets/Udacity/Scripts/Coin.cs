@@ -15,7 +15,6 @@ public class Coin : MonoBehaviour
         // Destroy this coin. Check the Unity documentation on how to use Destroy
 		Instantiate (CoinPoofPrefab, transform.position, Quaternion.Euler(90f,0f,0f));
 		CoinPoofPrefab.GetComponent<AudioSource>().clip = coinClip;
-		//gameObject.GetComponentInChildren<AudioSource>().Play();
 		Destroy (gameObject);
 
 
